@@ -1,0 +1,7 @@
+C:\Users\Galina\Desktop\GALINA\test2\task15\bin\Debug\task15.exe.config
+C:\Users\Galina\Desktop\GALINA\test2\task15\bin\Debug\task15.exe
+C:\Users\Galina\Desktop\GALINA\test2\task15\bin\Debug\task15.pdb
+C:\Users\Galina\Desktop\GALINA\test2\task15\obj\Debug\task15.csprojAssemblyReference.cache
+C:\Users\Galina\Desktop\GALINA\test2\task15\obj\Debug\task15.csproj.CoreCompileInputs.cache
+C:\Users\Galina\Desktop\GALINA\test2\task15\obj\Debug\task15.exe
+C:\Users\Galina\Desktop\GALINA\test2\task15\obj\Debug\task15.pdb
