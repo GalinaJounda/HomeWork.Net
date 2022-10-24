@@ -18,6 +18,7 @@ namespace task15
             Console.WriteLine("Введите число");
             string input = Console.ReadLine();
             int number = Convert.ToInt32(input);
+
             if (number <= 5 && number >= 1)
             {
                 Console.WriteLine("нет");
@@ -27,6 +28,7 @@ namespace task15
             {
                 Console.WriteLine("да");
             }
+
             Console.ReadLine();
         }
     }
