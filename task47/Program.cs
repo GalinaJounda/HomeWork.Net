@@ -15,6 +15,56 @@ namespace task47
         //8 7,8 -7,1 9
         static void Main(string[] args)
         {
+            int m = GetNumber("m");
+            int n = GetNumber("n");
+            int min = GetNumber("min");
+            int max = GetNumber("max");
+
+            double[,] matrix = GetMatrix(m, n, min, max);
+
+            ShowMatrix(matrix);
+            Console.ReadLine();
+        }
+
+        static int GetNumber(string input)
+        {
+            Console.WriteLine($"Введите переменную {input}");
+            var value = Console.ReadLine();
+            return Convert.ToInt32(value);
+        }
+
+        static double[,] GetMatrix(int m, int n, int min, int max)
+        {
+            double[,] matrix = new double[m, n];
+            var rand = new Random();
+
+            for (int i = 0; i < m; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    matrix[i,j] = Math.Round(rand.Next(min, max) + rand.NextDouble(), 1);
+                }
+            }
+            return matrix;
+        }
+
+        static void ShowMatrix(double[,] matrix)
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    Console.Write(matrix[i, j]);
+                    if (j < matrix.GetLength(1) - 1)
+                    {
+                        Console.Write(" ");
+                    }
+                    else
+                    {
+                        Console.WriteLine("");
+                    }
+                }
+            }
         }
     }
 }
